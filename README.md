@@ -14,4 +14,4 @@ This application is easy to download. Follow these steps to make sure about it:
 4. Finally, once you've located this file, open it to begin using the applicaiton.
 
 Reference:
-https://youtu.be/LkR-9Z1sle8, https://enupal.com/blog/como-crear-un-instalador multiplataforma-con-electron-para-windows-linux y-mac, https://www.codepolitan.com/membuat website-apapun-menjadi-aplikasi-desktop-dengan electron-dalam-15-menit-5830b4e408fcc-2140/
+https://youtu.be/LkR-9Z1sle8, https://enupal.com/blog/como-crear-un-instalador-multiplataforma-con-electron-para-windows-linux-y-mac, https://www.codepolitan.com/membuat-website-apapun-menjadi-aplikasi-desktop-dengan-electron-dalam-15-menit-5830b4e408fcc-2140/
