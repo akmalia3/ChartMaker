@@ -1,12 +1,11 @@
-# Chart Maker
-ChartM is application desktop that will visualization your data into a chart
+# ChartM-Desktop Application
+ChartM is desktop application that will visualizes data entered by user. This apllication was created using HTML,CSS and Javascript programming languages. And use electron to make this file executable in desktop. This application can be run in Windows-x64, Windows-ia32, Linux-x64 and MacOS-x64.
 
-Find this application in here
+Find this application here.
 
-Windows- x64 :
+https://drive.google.com/drive/folders/1GZc5h7cTurwT1x54Poq-W_VspDKDqrYy?usp=sharing
 
-https://drive.google.com/drive/folders/1VI1iHg123TSrprOs_y3u8bZJ8jCuo0Pc?usp=sharing
-
-Linux-x64:
-
-MacOS-x64
+1. Navigate to the link, select the file and then download based on the operating system you are currently using.
+2. After your download is done, compile your zip file.
+3. Open it and look for the file that has the name "ChartM" and that type is "Application".
+4. Finally, once you've located this file, open it to begin using the applicaiton.
