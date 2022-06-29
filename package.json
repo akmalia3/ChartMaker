@@ -1,0 +1,49 @@
+{
+  "name": "ChartM",
+  "version": "1.0.0",
+  "description": "Visualize your data into chart will be easy.",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron .",
+    "build": "electron-builder",
+  },
+
+  "build":{
+    "appId": "ChartM",
+    "win":{
+      "target":[
+        "nsis"
+      ],
+      "icon": "B-icons.ico"
+      },
+    "nsis":{
+      "oneClick": true,
+      "installerIcon": "B-icons.ico",
+      "uninstallerIcon": "B-icons.ico",
+      "uninstallDisplayName": "ChartM-uninstaller",
+      "license": "LICENSE.md",
+      "allowToChangeInstallationDirectory": false
+    }
+  },
+
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^19.0.4",
+    "electron-builder": "^23.1.0",
+    "electron-package": "^0.1.0",
+    "electron-packager": "^15.5.1"
+  },
+  "publish":[
+    "github"
+  ]
+},

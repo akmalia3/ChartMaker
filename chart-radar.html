@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Chart</title>
+        <style type="text/css">
+        </style>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!--navbar-->
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">ChartM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="choose.html">Back</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--last navbar-->
+
+      <!--contain-->  
+      <section class="pieChart">
+        <div class="row">
+          <div class="col-md-12 justify-content-center">
+            <h2 >Perbandingan Jumlah Mahasiswa</h2>
+          </div>
+        </div>
+            
+
+              <!--row1-->
+              <div class="row">
+                <!--col1-->
+                <div class="col-md-6">
+                  <div class="form-container mb-0 p-2" style="color: white; position: center; margin: 6rem; margin-left: 8rem; padding: 5rem; top:30px; left:30px; right: 30px; bottom: 30px;">
+                  </div>
+                </div>
+                <!--end col1-->
+
+                <!--col2-->
+                <div class="col-md-6">
+                  <div class="chart-container justify-content-center" style="position: center; margin: 3rem;top:60px; left:10px; width:350px; height:350px;">
+                      <canvas id="pieChart"></canvas></div> 
+                </div>
+                <!--end col2-->
+              </div>
+              <!-- end row1-->
+
+              <!--waves-->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="lightgray" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,197.3C672,171,768,117,864,106.7C960,96,1056,128,1152,160C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <!--end waves-->        
+        </section>
+        <!--end of contain-->         
+
+        <!--footer-->
+      <footer class="footer bg-dark text-white text-center">
+        <p class="text-white">Created by Akmalia Fatimah</p>
+      </footer>
+      <!--end of footer-->
+
+      
+        <script>
+            const mhs=['Aktif', 'Non-aktif', 'Cuti'];
+            const ctx = document.getElementById('pieChart');
+
+
+            const cont=document.querySelector(".form-container");
+            cont.innerHTML=mhs.map((M,i)=>{
+              let m=M.toLowerCase(); 
+              return `<input type="text" name="${m}" placeholder="${M}" value="${i+2}"> ${M}`;}).join("<br> <br>");
+              const inps=[...document.querySelectorAll("input")];
+              cont.addEventListener("input",ev=>{
+             pieChart.data.datasets[0].data= inps.map(el=>+el.value);
+             pieChart.update()
+            });
+
+
+            const pieChart = new Chart( ctx, {
+              type: 'polarArea',
+              data: {
+                labels: mhs,
+                datasets: [{
+                  label: '# of Votes',
+                  data: inps.map(el=>+el.value),
+                  backgroundColor: [
+                            'rgba(255, 99, 132, 0.6)',
+                            'rgba(54, 162, 235, 0.6)',
+                            'rgba(255, 206, 86, 0.6)',
+                  ],
+                  borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                  ],
+                }]
+              },
+            });
+
+            cont.addEventListener("input",ev=>{
+             pieChart.data.datasets[0].data= inps.map(el=>+el.value);
+             pieChart.update()
+            });
+</script>
+</body>
+</head>
+</html>
+
+        

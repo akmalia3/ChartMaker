@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <title>ChartM</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">ChartM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#galery">Galery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#login">Log-in</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+
+
+        <!-- Last navbar-->
+
+        <!-- jumbotron-->
+        <div id="home"></div>
+        <section class="jumbotron text-center">
+            <h1 style="color: rgb(224,227,228);">Hi, welcome <br>to the <mark>ChartM</mark></h1>
+            <p style="color: rgb(224,227,228);">let's make an incredible chart with us.</p>  
+             <a href="choose.html">
+               <br>
+            <button type="button"><span></span>Start</button></a>         
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(84, 128, 179)" fill-opacity="1" d="M0,96L80,101.3C160,107,320,117,480,144C640,171,800,213,960,218.7C1120,224,1280,192,1360,176L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path></svg>
+        </section> 
+        <!-- last jumbotron-->
+                
+        <!--About-->
+        <section id="about">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col">
+                <h2>About This Application</h2>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-5">
+                <br>
+                <p>This application will visualize your data into a graphics by a manual input from user. This application build with html, css and javascript. To make a graphics we use chartjs library and use electron to build into an application destkop.</p>
+              </div>
+              <div class="col-md-5">
+                <br>
+                <p>To use this application, you just want to input a number in input column that available in page and the chart will change by dynamic changes. For now you can't save your data, but this still in progress. So don't worry about it.</p>
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(190, 192, 196)" fill-opacity="1" d="M0,128L26.7,149.3C53.3,171,107,213,160,229.3C213.3,245,267,235,320,213.3C373.3,192,427,160,480,149.3C533.3,139,587,149,640,149.3C693.3,149,747,139,800,149.3C853.3,160,907,192,960,208C1013.3,224,1067,224,1120,202.7C1173.3,181,1227,139,1280,106.7C1333.3,75,1387,53,1413,42.7L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+          </path></svg>
+      </section>
+      <!-- Last About -->
+
+      <section id="galery">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <h2>Galery</h2>
+              <br>
+            </div>
+          </div>
+          <div class="row text-center">
+            <!--Bar Chart-->
+            <div class="col-md-3 mb-3">
+              <div class="card text-center bg-light">
+                <img src="galery/bar-icons.png" class="card-img-top" alt="bar">
+                <div class="card-body bg-light">
+                  <p class="card-text">Bar Chart</p>
+                </div>
+              </div>
+              </div>
+              <!--Last bar chart-->
+
+              <!--Pie Chart-->
+              <div class="col-md-3 mb-3">
+              <div class="card text-center bg-light">
+                <img src="galery/pie-icon.png" class="card-img-top" alt="pie">
+                <div class="card-body bg-light">
+                  <p class="card-text">Pie Chart</p>
+                </div>
+              </div>
+            </div>
+              <!--Last Pie-->
+
+              <!--Line chart-->
+              <div class="col-md-3 mb-3">
+              <div class="card text-center bg-light">
+                <img src="galery/line-icon.png" class="card-img-top" alt="line">
+                <div class="card-body bg-light">
+                  <p class="card-text">Line Chart</p>
+                </div>
+              </div>
+            </div>
+              <!--Last Line-->
+
+              <!--Area chart-->
+              <div class="col-md-3 mb-3">
+              <div class="card text-center bg-light">
+                <img src="galery/polar-icons.png" class="card-img-top" alt="area">
+                <div class="card-body bg-light">
+                  <p class="card-text">Polar Area Chart</p>
+                </div>
+              </div>
+            </div>
+              <!--Last area-->
+              
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(4, 9, 14)" fill-opacity="1" d="M0,224L60,224C120,224,240,224,360,234.7C480,245,600,267,720,256C840,245,960,203,1080,181.3C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+          
+        </path></svg>
+      </section>
+
+      <!--kontak-->
+      <section id="login">
+        <div class="container">
+          <div class="row text-center mb-3 text-white">
+            <div class="col">
+                <h2>Login</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center text-white">
+            <div class="col-md-6 ">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputName" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="exampleInputName" aria-describedby="Name">
+              
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </section>
+      <!--last kontak-->
+
+      <footer class="bg-dark text-white text-center mb-3 pb-3">
+        <p class="text-white">Created by Akmalia Fatimah</p>
+      </footer>
+          <script src="./renderer.js"></script>
+    </body>
+</html>
